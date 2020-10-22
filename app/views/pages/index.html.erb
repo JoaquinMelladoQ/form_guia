@@ -1,8 +1,9 @@
 
-<%= params[:q] %>
-<h1>form</h1>
-<form action="">
-    <input name="q">
-    <input name="email">
+<h1>The results of sum:
+    <%= params[:x].to_i + params[:y].to_i %>
+</h1>
+<form>
+    <input name="x">
+    <input name="y">
     <input type="submit" value="Enviar" >
 </form>

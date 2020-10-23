@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   end
 
   def create
-    User.create(email: params[:email])
+    User.create(email: params[:email], age: params[:age])
   end
 
 end

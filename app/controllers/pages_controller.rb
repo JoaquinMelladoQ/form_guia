@@ -8,7 +8,7 @@ class PagesController < ApplicationController
 
   def dashboard
     if params[:email].present?
-      User.where('email = ?', params[:email])
+      @users = User.where('email = ?', params[:email])
     else
       @users = User.find_valid
     end

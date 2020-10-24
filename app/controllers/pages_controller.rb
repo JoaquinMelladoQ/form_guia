@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+
+  http_basic_authenticate_with name: "tunom", password: "tupass", only: :dashboard
+
   def index
   end
 

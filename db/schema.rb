@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_24_025232) do
+ActiveRecord::Schema.define(version: 2020_10_24_030407) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2020_10_24_025232) do
     t.integer "age"
     t.text "comment"
     t.string "name", default: "NN"
+    t.string "last_name"
+    t.string "full_name"
   end
 
 end
